@@ -1,0 +1,33 @@
+{
+  "name": "tsnode",
+  "version": "1.0.0",
+  "description": "A node app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run-script build && node ./build/bin/startup.js"
+     
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSUnderstanding/Typescripttemplate.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Lars Hjerrild",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSUnderstanding/Typescripttemplate/issues"
+  },
+  "homepage": "https://github.com/CSUnderstanding/Typescripttemplate#readme",
+  "dependencies": {
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.4"
+  }
+}
