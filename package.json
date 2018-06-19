@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "npm run-script build && node ./build/bin/startup.js"
-     
+    "start": "npm run-script build && node ./build/bin/startup.js",
+    "clean": "rm -rf ./build"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/CSUnderstanding/Typescripttemplate#readme",
   "dependencies": {
+    "express": "^4.16.3",
     "typescript": "^2.9.2"
   },
   "devDependencies": {
