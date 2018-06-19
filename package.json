@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "bash ./devs/install/build.sh",
     "prestart": "npm run-script build",
     "start": "node ./build/bin/startup.js",
     "clean": "rm -rf ./build",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/CSUnderstanding/Typescripttemplate#readme",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "typescript": "^2.9.2"
   },
