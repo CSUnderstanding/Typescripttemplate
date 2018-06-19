@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "npm run-script build && node ./build/bin/startup.js",
-    "clean": "rm -rf ./build"
+    "prestart": "npm run-script build",
+    "start": "node ./build/bin/startup.js",
+    "clean": "rm -rf ./build",
+    "postclean": "echo \"Directory cleaned \""
   },
   "repository": {
     "type": "git",
