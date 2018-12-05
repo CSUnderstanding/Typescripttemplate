@@ -16,7 +16,6 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
-
 function normalizePort(val :string) {
     var port = parseInt(val, 10);
   
@@ -66,4 +65,5 @@ function normalizePort(val :string) {
     var bind = typeof addr === 'string'
       ? 'pipe ' + addr
       : 'port ' + addr.port;
+      console.log("listening on ", addr)
   }

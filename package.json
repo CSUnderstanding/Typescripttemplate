@@ -27,8 +27,11 @@
   },
   "homepage": "https://github.com/CSUnderstanding/Typescripttemplate#readme",
   "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/mongoose": "^5.3.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
+    "mongoose": "^5.3.14",
     "typescript": "^2.9.2"
   },
   "devDependencies": {
